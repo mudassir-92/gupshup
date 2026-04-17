@@ -104,17 +104,46 @@ flutter run -d chrome
 ### 7️⃣ Folder Structure (High Level)
 
 ```
-main/
-├─ lib/
-│  ├─ main.dart
-│  ├─ assets/            # all images and fonts
-│  ├─ utils.dart          # Zego credentials
-│  ├─ screens/           # All app screens
-│  ├─ Controller/         # All RiverPod related things are here 
-│  └─ models/          # API calls, Supabase integration
-├─ .env                  # Environment variables
-└─ pubspec.yaml
-```
+Directory structure:
+└── mudassir-cpp-gupshup/
+    ├── README.md
+    ├── analysis_options.yaml
+    ├── devtools_options.yaml
+    ├── pubspec.yaml
+    ├── .metadata
+    ├── lib/
+    │   ├── main.dart
+    │   ├── utils.dart
+    │   ├── widgets.dart
+    │   ├── assets/
+    │   │   └── images/
+    │   │       └── khali.webp
+    │   ├── Controller/
+    │   │   ├── all_providers.dart
+    │   │   ├── app_controller.dart
+    │   │   ├── call_service.dart
+    │   │   ├── calls_provider.dart
+    │   │   ├── chat_provider.dart
+    │   │   ├── socket_service.dart
+    │   │   └── zigo_controller.dart
+    │   ├── models/
+    │   │   ├── call.dart
+    │   │   ├── post.dart
+    │   │   └── user.dart
+    │   └── screens/
+    │       ├── add_new_chat_using_username_screen.dart
+    │       ├── calls_screen.dart
+    │       ├── chat_screen.dart
+    │       ├── chat_tab_screen.dart
+    │       ├── home_screen.dart
+    │       ├── login_screen.dart
+    │       ├── profile_screen.dart
+    │       ├── signup_screen.dart
+    │       ├── splash_screen.dart
+    │       └── username_screen.dart
+    └── test/
+        └── widget_test.dart
+
 
 ---
 
